@@ -1,0 +1,13 @@
+<h1>Editing friend</h1>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div class = "d-inline-flex gap-1">
+  <%= link_to "Show this friend", @friend , class:"btn btn-outline-secondary"%> 
+  <%= link_to "Back to friends", friends_path, class:"btn btn-outline-secondary"%>
+
+  <%=button_to "Destroy", @friend, method: :delete, class: "btn btn-outline-danger" %>
+
+</div>
